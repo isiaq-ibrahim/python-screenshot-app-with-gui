@@ -233,7 +233,7 @@ This code opens a small window with two buttons:
 - 📸 "Take Screenshot": Captures and saves a screenshot to a specific folder.
 - ❌ "Quit": Closes the application.
 
-▶️ [Watch Demo Video](https://drive.google.com/file/d/169izlwK6HUbpvnXKuDunrLVAfKQCMYbQ/view?usp=sharing)
+▶️ [[Watch Demo Video](assets/video-thumbnail.png)](https://drive.google.com/file/d/169izlwK6HUbpvnXKuDunrLVAfKQCMYbQ/view?usp=sharing)
 
 The full code is beginner-friendly and could be a great reference for anyone looking to dip their toes into automation and Python scripting.
 
