@@ -62,8 +62,4 @@ In my case, I use 'virtualenv pyautoenv' (you will find this in the repository w
 ```
 pyautoenv\Scripts\activate
 ```
-
-
-
-4. 
-
+After completing all these steps, navigate to the folder you will be working with and create a Python file (screenshot_app.py). Alternatively, you can create this in your text code editor like VSCode, Sublime Text, or Notepad++.
