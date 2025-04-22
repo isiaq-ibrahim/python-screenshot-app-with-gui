@@ -102,3 +102,14 @@ Summary of the code:
     - `round()` rounds the number to the nearest integer.
     - `int(...)` ensures it’s an integer.
 
+🔹 This is often used to create a unique timestamp, which could be useful as a filename.
+
+🟡 But in this case, the variable name is calculated but not used — a small inefficiency.
+
+- `time.sleep(5)`-> This pauses the program for **5 seconds** before taking the screenshot. This gives you time to switch windows or get your screen ready.
+- `img = pyautogui.screenshot('test.png')`
+    - This takes a screenshot of the entire screen.
+    - The image is saved as `'test.png'` in the current working directory.
+    - The screenshot is also stored in the variable `img` as an image object (Pillow `Image` type).
+
+
