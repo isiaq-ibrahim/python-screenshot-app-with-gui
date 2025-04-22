@@ -7,6 +7,7 @@ Python Screenshot App is an application I have developed using Python. The appli
 1. First, you must download Python (python.org) and install it on your machine. Install Python 3.10 - 3.11 due to compatibility issues with PyAutoGUI.
 
 ✅ Recommended Python Versions for PyAutoGUI
+
 PyAutoGUI and its dependencies (like pyscreeze, pillow, etc.) are best supported on:
 - Python 3.6 → 3.11
 
@@ -31,9 +32,14 @@ If you’re using Python 3.12 or newer, some packages (like Pillow) might not be
 ```
 pip install virtualenv
 ```
+The command pip install virtualenv installs the virtualenv package using Python's package manager, pip.
 
-This script allows us to create multiple virtual environment for our other projects.
+🔍 What is virtualenv?
 
+virtualenv is a tool used to create isolated Python environments. Each virtual environment has its own installation directories, separate from the global Python environment. This is useful for:
+- Avoiding conflicts between dependencies of different projects.
+- Working on projects with different Python versions or packages.
+- Keeping your system’s Python environment clean and stable.
 
 
 4. 
