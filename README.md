@@ -156,6 +156,69 @@ close.pack(side=tk.LEFT)
 root.mainloop()
 ```
 
+### Explanation of the code:
+#### ✅ Imports
+```
+import time
+import pyautogui
+import tkinter as tk
+```
+
+- `time` is used to generate a unique timestamp for naming the screenshot file.
+- `pyautogui` is a module that can control the mouse and keyboard and also take screenshots.
+- `tkinter` is a Python standard GUI toolkit, used to create graphical interfaces.
+
+#### ✅ screenshot() Function
+```
+def screenshot():
+    name = int(round(time.time() * 1000))
+    name = 'C:/Users/ibrah/Documents/LearnPythonProjects/screensnaps/{}.png'.format(name)
+    img = pyautogui.screenshot(name)
+    img.show()
+```
+
+- `time.time()` returns the current time in seconds since epoch.
+- Multiplying by `1000` and rounding gives a millisecond-accurate timestamp to name the screenshot uniquely.
+- The path `'C:/Users/ibrah/Documents/LearnPythonProjects/screensnaps/'` is formatted with this timestamp to save the screenshot. `{}.png` saves the screenshot in .png photo format.
+- `pyautogui.screenshot(name)` takes a screenshot and saves it to the specified path.
+- `img.show()` opens the saved image using the default image viewer.
+
+#### ✅ Creating the GUI
+```
+root = tk.Tk()
+frame = tk.Frame(root)
+frame.pack()
+```
+
+- `root = tk.Tk()`: Creates the main application window.
+- `tk.Frame(root)`: Creates a frame widget to hold the buttons.
+- `frame.pack()`: Adds the frame to the main window.
+
+#### ✅ "Take Screenshot" Button
+```
+button = tk.Button(
+    frame,
+    text="Take Screenshot",
+    command=screenshot)
+button.pack(side=tk.LEFT)
+```
+
+- A button is created with the label "Take Screenshot".
+- When clicked, it calls the `screenshot()` function.
+- `side=tk.LEFT`: Aligns the button to the left inside the frame.
+
+#### ✅ "Quit" Button
+```
+close = tk.Button(
+    frame,
+    text="Quit",
+    command=quit)
+close.pack(side=tk.LEFT)
+```
+
+- Another button labeled "Quit" is created.
+- When clicked, it exits the application.
+
 
 The full code is beginner-friendly and could be a great reference for anyone looking to dip their toes into automation and Python scripting.
 
