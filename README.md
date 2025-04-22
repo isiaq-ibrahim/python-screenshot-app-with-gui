@@ -63,3 +63,21 @@ In my case, I use 'virtualenv pyautoenv' (you will find this in the repository w
 pyautoenv\Scripts\activate
 ```
 After completing all these steps, navigate to the folder you will be working with and create a Python file (screenshot_app.py). Alternatively, you can create this in your text code editor like VSCode, Sublime Text, or Notepad++.
+
+4. Download and install VSCode (code.visualstudio.com), open the folder on your computer in VSCode, and then open the screenshot_app.py file in VSCode. Copy and paste this:
+
+```
+import time
+import pyautogui
+
+def screenshot():
+    time.sleep(5)
+    img = pyautogui.screenshot('test.png')
+    img.show()
+
+screenshot()
+```
+
+To run this code, go to the terminal and run 'python screenshot_app.py'. A screenshot of your screen will be taken after five seconds (this is because I have specified 5 in the code. Of course, you can modify this.) If you run the program one more time, it overrides the file 'test.png'.
+
+
