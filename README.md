@@ -27,7 +27,7 @@ python --version
 
 If you’re using Python 3.12 or newer, some packages (like Pillow) might not be fully compatible depending on the version.
 
-3. Start the command prompt again, but this time as an administrator. We need to install a library package called PyAutoGUI. To install this, run the following script in your terminal:
+3. Start the command prompt again, but this time as an administrator. You need to install a library package called PyAutoGUI. To install this, run the following script in your terminal:
 
 ```
 pip install virtualenv
@@ -41,30 +41,29 @@ virtualenv is a tool used to create isolated Python environments. Each virtual e
 - Working on projects with different Python versions or packages.
 - Keeping your system’s Python environment clean and stable.
 
+✅ What happens when you run pip install virtualenv?
+
+When you run the command:
+```
+pip install virtualenv
+```
+
+- pip connects to the Python Package Index (PyPI).
+- It downloads the latest version of the virtualenv package.
+- It installs the package into your current Python environment (usually system-wide or in an existing virtual environment, depending on how pip is configured).
+
+🛠️ After installing, you can create a virtual environment like this:
+
+```
+virtualenv [myenv]
+```
+In my case, I use 'virtualenv pyautoenv' (you will find this in the repository with others I had previously created, like projectsenv and pythonprojects). I ran this script in the command prompt while in the directory where I am going to write my Python code. Then activated it by running:
+
+```
+pyautoenv\Scripts\activate
+```
+
+
 
 4. 
 
-
-
-
-
-
-🚀 Features
-- Capture full-screen screenshots with a single command
-- Automatically saves screenshots with random integer filenames
-- Cross-platform support (Windows, macOS, Linux)
-- Simple and beginner-friendly Python codebase
-
-🛠️ Built with
-- Python 3.10.7
-- PyAutoGUI
-
-📂 Installation
-```
-pip install pyautogui
-```
-
-📷 Usage
-```
-python screenshot_app.py
-```
