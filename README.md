@@ -11,10 +11,37 @@ PyAutoGUI and its dependencies (like pyscreeze, pillow, etc.) are best supported
 - Python 3.6 → 3.11
 
 🟢 Python 3.10 and 3.11 are currently the most stable for PyAutoGUI.
+
 ⚠️ Python 3.12+ Issues
+
 Some versions of Pillow, which is used by pyscreeze (and indirectly by pyautogui), had compatibility issues with Python 3.12 in earlier releases.
 
 PyAutoGUI hasn't been officially updated to declare Python 3.12 support in all cases.
+
+2. After successfully installing Python, launch your command prompt and verify that it has been successfully installed and also to check the current version.
+
+```
+python --version
+```
+
+If you’re using Python 3.12 or newer, some packages (like Pillow) might not be fully compatible depending on the version.
+
+3. Start the command prompt again, but this time as an administrator. We need to install a library package called PyAutoGUI. To install this, run the following script in your terminal:
+
+```
+pip install virtualenv
+```
+
+This script allows us to create multiple virtual environment for our other projects.
+
+
+
+4. 
+
+
+
+
+
 
 🚀 Features
 - Capture full-screen screenshots with a single command
