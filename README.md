@@ -111,5 +111,16 @@ Summary of the code:
     - This takes a screenshot of the entire screen.
     - The image is saved as `'test.png'` in the current working directory.
     - The screenshot is also stored in the variable `img` as an image object (Pillow `Image` type).
+- `img.show()` -> This opens the screenshot in the default image viewer on your system (Windows Photo Viewer, Preview on macOS, etc.).
+- `screenshot()` -> This calls the `screenshot()` function, so the code actually runs.
+
+🔍 Summary of Behavior:
+1. It waits 5 seconds.
+2. Captures a screenshot of the entire screen.
+3. Saves it as 'test.png'.
+4. Opens the image for preview.
+
+
+
 
 
