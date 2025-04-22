@@ -219,6 +219,21 @@ close.pack(side=tk.LEFT)
 - Another button labeled "Quit" is created.
 - When clicked, it exits the application.
 
+#### ✅ Run the GUI Loop
+```
+root.mainloop()
+```
+
+- Starts the tkinter event loop, waiting for user interactions (like button clicks).
+
+
+📝 Summary
+
+This code opens a small window with two buttons:
+- 📸 "Take Screenshot": Captures and saves a screenshot to a specific folder.
+- ❌ "Quit": Closes the application.
+
+▶️ [Watch Demo Video]([https://www.youtube.com/watch?v=YourVideoID](https://drive.google.com/file/d/169izlwK6HUbpvnXKuDunrLVAfKQCMYbQ/view?usp=sharing))
 
 The full code is beginner-friendly and could be a great reference for anyone looking to dip their toes into automation and Python scripting.
 
