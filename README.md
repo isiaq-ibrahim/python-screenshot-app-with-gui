@@ -120,7 +120,49 @@ Summary of the code:
 3. Saves it as 'test.png'.
 4. Opens the image for preview.
 
+This marks the end of the implementation of the Python Screenshot App (Note: This does not include the GUI. The app automatically takes a screenshot of the screen after 5 seconds.) Now let's look at how to improve this project to include a Graphics User Interface where the user can click on a button to take a screenshot rather than waiting for five seconds.
+
+You can overwrite the `screenshot_app.py` and paste the following codes in the file.
+
+```
+import time
+import pyautogui
+import tkinter as tk
+
+def screenshot():
+    name = int(round(time.time() * 1000))
+    name = 'C:/Users/ibrah/Documents/LearnPythonProjects/screensnaps/{}.png'.format(name)
+    img = pyautogui.screenshot(name)
+    img.show()
+
+root = tk.Tk()
+frame = tk.Frame(root)
+frame.pack()
+
+button = tk.Button(
+    frame,
+    text="Take Screenshot",
+    command=screenshot)
+
+button.pack(side=tk.LEFT)
+
+close = tk.Button(
+    frame,
+    text="Quit",
+    command=quit)
+
+close.pack(side=tk.LEFT)
+
+root.mainloop()
+```
 
 
+The full code is beginner-friendly and could be a great reference for anyone looking to dip their toes into automation and Python scripting.
 
+🌟 Contributing
+Feel free to fork, improve, and submit pull requests! This is a great project to start learning Python scripting and GUI automation.
 
+📬 Contact
+For questions, suggestions, or collaborations, connect with me on LinkedIn (https://www.linkedin.com/in/isiaq-ibrahim-468588156/).
+
+⭐ Don't forget to give it a star if you find it helpful!
