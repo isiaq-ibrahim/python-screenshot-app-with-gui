@@ -8,7 +8,7 @@ Python Screenshot App is an application I have developed using Python. The appli
 
 ✅ Recommended Python Versions for PyAutoGUI
 
-PyAutoGUI and its dependencies (like pyscreeze, pillow, etc.) are best supported on:
+PyAutoGUI and its dependencies (like `pyscreeze`, `pillow`, etc.) are best supported on:
 - Python 3.6 → 3.11
 
 🟢 Python 3.10 and 3.11 are currently the most stable for PyAutoGUI.
