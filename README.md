@@ -78,6 +78,27 @@ def screenshot():
 screenshot()
 ```
 
-To run this code, go to the terminal and run 'python screenshot_app.py'. A screenshot of your screen will be taken after five seconds (this is because I have specified 5 in the code. Of course, you can modify this.) If you run the program one more time, it overrides the file 'test.png'.
+To run this code, go to the terminal and run 'python screenshot_app.py'. A screenshot of your screen will be taken after five seconds (this is because I have specified 5 in the code. Of course, you can modify this.) If you run the program one more time, it overrides the file 'test.png'. To solve this problem of file overwrite, I added the following line of code under 'def screenshot()'
 
+```
+import time
+import pyautogui
+
+def screenshot():
+    name = int(round(time.time() * 1000))
+    time.sleep(5)
+    img = pyautogui.screenshot('test.png')
+    img.show()
+
+screenshot()
+```
+Summary of the code:
+- `import pyautogiu` -> This imports the pyautogui library, which is used for GUI automation. It can control the mouse and keyboard, and also take screenshots.
+- `import time` -> This imports Python's built-in `time` module, which allows you to work with time-related functions, like delays (`sleep`) or getting the current timestamp (`time()`).
+- `def screenshot():` -> This defines a function named `screenshot`. Everything indented below it belongs to this function.
+- `name = int(round(time.time() * 1000))`:
+    - `time.time()` returns the current time in seconds since the Unix epoch.
+    - Multiplying by `1000` converts it to milliseconds.
+    - `round()` rounds the number to the nearest integer.
+    - `int(...)` ensures it’s an integer.
 
